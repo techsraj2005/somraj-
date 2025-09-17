@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Somraj Kumar's Portfolio – A student pursuing Bachelor of Computer Applications">
+  <title>Somraj Kumar – Portfolio</title>
+  
+  <style>
+    /* Resetting default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0e0e0e;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    /* Outer Container */
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Left and Right Design Elements */
+    .container::before, .container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 20px;
+      height: 100%;
+      background: linear-gradient(45deg, #ff4d4d, #ff7a7a);
+      border-radius: 50px;
+      z-index: -1;
+    }
+
+    .container::before {
+      left: -30px;
+    }
+
+    .container::after {
+      right: -30px;
+    }
+
+    /* Name Styling */
+    .name {
+      font-size: 48px;
+      color: #ff4d4d;
+      margin-bottom: 10px;
+      animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Location Styling */
+    .location {
+      font-size: 22px;
+      font-weight: normal;
+      margin-bottom: 25px;
+      color: #f1f1f1;
+    }
+
+    /* Profile Image Styling */
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      border: 4px solid #fff;
+    }
+
+    /* Bio Styling */
+    .bio {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    /* Instagram Link Styling */
+    .instagram-link {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 18px;
+      background: #e1306c;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .instagram-link:hover {
+      background: #c8235d;
+    }
+
+    /* Motivational Shayari Section */
+    .shayari {
+      margin-top: 40px;
+      font-size: 22px;
+      color: #f1f1f1;
+      font-style: italic;
+      line-height: 1.8;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="container">
+    <img src="C:\Users\DELL\Desktop\raj web pic.jpg" alt="Somraj Kumar Profile Picture" class="profile-img">
+    <h1 class="name">Somraj Kumar Sah</h1>
+    <h2 class="location">From Begusarai, Bihar</h2>
+    <p class="bio">
+      I am pursuing <strong>Bachelor of Computer Applications (BCA)</strong> And now ,i am in  1st semester,
+      from <strong>CIMAGE Professional College, Patna</strong>.
+    </p>
+    <a class="instagram-link"
+       href="https://www.instagram.com/somraj_._15_sah?igsh=MW8xbjZydm94NmM4Mg=="
+       target="_blank" rel="noopener noreferrer">
+       <b>Connect on Instagram</b>
+    </a>
+  </header>
+
+  <!-- Motivational Shayari Section -->
+  <section class="shayari">
+    <p>
+     <strong> "Jab tak hum khud pe vishwas nahi karte 💪, tab tak zindagi humare sapno ko poora nahi kar sakti ✨.<br>
+    Toh apne sapno ka peecha karo 🌟, apne himmat ko kabhi kam naa hone do 🔥!"</strong>
+    </p>
+  </section>
+</body>
+</html>
